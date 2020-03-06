@@ -16,6 +16,10 @@ export default () =>
 
     return (
         <View>
+            {/* 
+                Flat List apenas renderiza o que esta na tela, assim
+                diminui o processamento do celular.
+            */}  
             <FlatList 
                 data={devs}
                 keyExtractor={devs => devs.id}
